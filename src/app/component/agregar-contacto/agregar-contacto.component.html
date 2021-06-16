@@ -1,0 +1,56 @@
+<div class="container">
+    <h4>Añadir Contacto</h4>
+    <hr>
+    <form autocomplete="off" [formGroup]="formulario" (ngSubmit)="guardar()">
+        <div>
+            <div class="form-group row">
+                <label class="col-2 col-form-label">Nombre(*)</label>
+                <div class="col-8">
+                    <input class="form-control" type="text" placeholder="Escribe un nombre..." formControlName="nombre">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-2 col-form-label">Apellido(*)</label>
+                <div class="col-8">
+                    <input class="form-control" type="" placeholder="Escribe tus apellidos..." formControlName="apellido">
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-2 col-form-label">Descripcion del contacto</label>
+            <div class="col-8">
+                <input class="form-control" type="text" placeholder="Escribe una descripcion del contacto..." formControlName="descripcion">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-2 col-form-label">Sexo</label>
+            <div class="col-8">
+                <input class="form-control" type="text" formControlName="sexo">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-2 col-form-label">Empresa</label>
+            <div class="col-8">
+                <input class="form-control" type="text" placeholder="Escribe el nombre de su empresa..." formControlName="empresa">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-2 col-form-label">Email(*)</label>
+            <div class="col-8">
+                <input class="form-control" type="email" placeholder="Escribe tu email..." formControlName="email">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-2 col-form-label">Telefono(*)</label>
+            <div class="col-8">
+                <input class="form-control" type="number" placeholder="Escribe un telefono..." formControlName="telefono">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-2 col-form-label">&nbsp;</label>
+            <div class="input-group col-md-8">
+                <button type="submit" style="width: 25cm;" class="btn btn-outline-primary btn-block">
+        Añadir Contacto
+      </button>
+            </div>
+        </div>

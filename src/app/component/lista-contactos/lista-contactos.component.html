@@ -1,0 +1,12 @@
+<div class="container">
+    <h4>Lista de contactos</h4>
+    <div class="card-group">
+        <div *ngFor="let contacto of contactos " class="card" style="text-align: justify;">
+            <div class="card-body">
+                <h4 class="card-text" style="text-align: justify;">{{ contacto.nombre }} {{ contacto.apellidos }} ({{ contacto.genero }})</h4>
+                <p class="card-text">{{ contacto.descripcion }}</p>
+                <a href="#" class="btn btn-primary">Ver detalles</a>
+            </div>
+        </div>
+    </div>
+</div>
